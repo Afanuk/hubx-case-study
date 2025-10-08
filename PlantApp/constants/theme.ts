@@ -1,30 +1,22 @@
-/**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
- */
-
 import { Platform } from 'react-native';
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+const tintColorLight = '#4CAF50';
+const tintColorDark = '#4CAF50';
 
 export const Colors = {
-  light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
-  },
-  dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
-  },
+    text: '#ECEDEE', /*main text*/
+    background: '#151718', /*main background*/
+    tint: tintColorDark, /*links and buttons*/
+    icon: '#597165B2', /*secondary text and icons*/
+    tabIconDefault: '#9BA1A6', /*unselected tab icon*/
+    tabIconSelected: tintColorDark, /*selected tab icon*/ 
+    primary: '#28AF6E', /*used in buttons A*/          
+    secondary: '#8BC34A', /*used in highlights*/ 
+    accent: '#FFC107', /*used in alerts*/ 
+    surface: '#2C2C2C', /*cards and modals*/
+    card: '#1E1E1E', /*tab bar background*/
+    border: '#404040', /*separators and borders A*/
+    premium: '#8D6E63', /*premium features*/
 };
 
 export const Fonts = Platform.select({
